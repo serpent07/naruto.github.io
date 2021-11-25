@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Naruto Caractère</title>
+    <style>
+body
+{
+    background-image: url('Konoha.jpg');
+}
+
+h1
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.liste
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+</style>
+
+  <style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 2px 2px 0 0;
+
+
+}
+
+.container {
+  padding: 2px 2px;
+  color: white;
+}
+
+h2
+{
+    text-align: center;
+    color: white;
+}
+
+body
+{
+    background-image:  url('Konoha.jpg');
+    background-color: black;
+}
+
+.card
+{
+    color: white;
+    text-align: center;
+}
+
+.liste
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+align-items:center ;
+}
+
+
+
+.img-character{
+    width: 250px;
+}
+
+.liste > .links > a{
+margin: 20px 20px;
+font-size: 2em;
+text-decoration: none;
+color: white;
+}
+
+.liste > .links{
+    display: flex;
+    justify-content: space-between;
+}
+
+</style>
+
+<script type="text/javascript" src="./data-naruto.json"></script>
+<script type="text/javascript" src="./script.js"></script>
+</head>
+
+ <body>
+
+<div class="liste">
+<form id="searchbox" autocomplete= "off ">
+    <input id= "q" type= "text" size= "15″ placeholder= "search… " onkeypress="lancerRecherche(event)" />
+    <button id= "button-submit" type= "button" onclick="lancerRecherche()">rechercher</button>
+</div>
+</form> 
+    <h1><strong>Naruto Caractère</strong></h1>
+
+     <div id="list" class="liste">
+
+     </div>
+
+</body>
+</html> 
